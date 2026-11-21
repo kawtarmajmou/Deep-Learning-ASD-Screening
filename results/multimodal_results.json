@@ -1,0 +1,204 @@
+{
+  "eeg_real": {
+    "auc": 76.67,
+    "f1": 83.0,
+    "acc": 89.29
+  },
+  "calibration": {
+    "MRI Raw": {
+      "auc": 75.9,
+      "f1": 71.31,
+      "acc": 65.66,
+      "sensitivity": 89.66,
+      "specificity": 43.87,
+      "thr_f1": 0.205,
+      "thr_youden": 0.374,
+      "thr_ba": 0.405
+    },
+    "MRI Platt": {
+      "auc": 75.55,
+      "f1": 71.14,
+      "acc": 67.17,
+      "sensitivity": 85.02,
+      "specificity": 50.96,
+      "thr_f1": 0.32,
+      "thr_youden": 0.397,
+      "thr_ba": 0.41
+    },
+    "MRI Isotonic": {
+      "auc": 74.73,
+      "f1": 71.19,
+      "acc": 65.06,
+      "sensitivity": 90.72,
+      "specificity": 41.76,
+      "thr_f1": 0.335,
+      "thr_youden": 0.515,
+      "thr_ba": 0.505
+    },
+    "MRI Temperature": {
+      "auc": 75.9,
+      "f1": 71.51,
+      "acc": 65.36,
+      "sensitivity": 91.35,
+      "specificity": 41.76,
+      "thr_f1": 0.305,
+      "thr_youden": 0.427,
+      "thr_ba": 0.445
+    }
+  },
+  "best_calibration": "MRI Raw",
+  "fusion": {
+    "MRI only (calibrated)": {
+      "auc": 75.9,
+      "f1": 71.31,
+      "acc": 65.66,
+      "sensitivity": 89.66,
+      "specificity": 43.87,
+      "thr_f1": 0.205,
+      "thr_youden": 0.374,
+      "thr_ba": 0.405
+    },
+    "EEG only (simulated)": {
+      "auc": 74.61,
+      "f1": 69.89,
+      "acc": 64.96,
+      "sensitivity": 85.44,
+      "specificity": 46.36,
+      "thr_f1": 0.37,
+      "thr_youden": 0.463,
+      "thr_ba": 0.465
+    },
+    "Weighted avg (MRI=0.40,EEG=0.60)": {
+      "auc": 83.26,
+      "f1": 76.71,
+      "acc": 76.41,
+      "sensitivity": 81.65,
+      "specificity": 71.65,
+      "thr_f1": 0.46,
+      "thr_youden": 0.462,
+      "thr_ba": 0.485
+    },
+    "Weighted avg (equal 0.50/0.50)": {
+      "auc": 82.76,
+      "f1": 75.66,
+      "acc": 75.0,
+      "sensitivity": 81.65,
+      "specificity": 68.97,
+      "thr_f1": 0.455,
+      "thr_youden": 0.462,
+      "thr_ba": 0.46
+    },
+    "AUC-weighted  (MRI=0.50,EEG=0.50)": {
+      "auc": 82.78,
+      "f1": 75.55,
+      "acc": 73.09,
+      "sensitivity": 87.34,
+      "specificity": 60.15,
+      "thr_f1": 0.405,
+      "thr_youden": 0.491,
+      "thr_ba": 0.49
+    },
+    "Product rule (Bayesian)": {
+      "auc": 82.87,
+      "f1": 75.15,
+      "acc": 74.7,
+      "sensitivity": 80.38,
+      "specificity": 69.54,
+      "thr_f1": 0.4,
+      "thr_youden": 0.481,
+      "thr_ba": 0.48
+    },
+    "Max rule": {
+      "auc": 79.88,
+      "f1": 74.41,
+      "acc": 71.69,
+      "sensitivity": 86.5,
+      "specificity": 58.24,
+      "thr_f1": 0.56,
+      "thr_youden": 0.65,
+      "thr_ba": 0.65
+    },
+    "Stacking meta-LR (C=0.01)": {
+      "auc": 81.68,
+      "f1": 74.69,
+      "acc": 71.69,
+      "sensitivity": 87.76,
+      "specificity": 57.09,
+      "thr_f1": 0.455,
+      "thr_youden": 0.471,
+      "thr_ba": 0.47
+    },
+    "Stacking meta-LR (C=0.1)": {
+      "auc": 82.51,
+      "f1": 75.27,
+      "acc": 72.89,
+      "sensitivity": 86.71,
+      "specificity": 60.34,
+      "thr_f1": 0.405,
+      "thr_youden": 0.458,
+      "thr_ba": 0.475
+    },
+    "Stacking meta-LR (C=1.0)": {
+      "auc": 82.99,
+      "f1": 75.82,
+      "acc": 74.0,
+      "sensitivity": 85.65,
+      "specificity": 63.41,
+      "thr_f1": 0.37,
+      "thr_youden": 0.465,
+      "thr_ba": 0.465
+    },
+    "Cal.Ensemble (w_MRI=0.50)": {
+      "auc": 83.56,
+      "f1": 76.94,
+      "acc": 76.1,
+      "sensitivity": 83.76,
+      "specificity": 69.16,
+      "thr_f1": 0.455,
+      "thr_youden": 0.467,
+      "thr_ba": 0.475
+    },
+    "Cal.Ensemble (w_MRI=0.40)": {
+      "auc": 83.06,
+      "f1": 75.79,
+      "acc": 75.3,
+      "sensitivity": 81.22,
+      "specificity": 69.92,
+      "thr_f1": 0.465,
+      "thr_youden": 0.506,
+      "thr_ba": 0.505
+    }
+  },
+  "best_fusion": "Cal.Ensemble (w_MRI=0.50)",
+  "threshold_analysis": {
+    "Max-F1 threshold": {
+      "threshold": 0.455,
+      "f1": 76.94,
+      "acc": 76.1,
+      "sensitivity": 83.76,
+      "specificity": 69.16
+    },
+    "Youden J (ROC optimal)": {
+      "threshold": 0.467,
+      "f1": 76.86,
+      "acc": 76.61,
+      "sensitivity": 81.65,
+      "specificity": 72.03
+    },
+    "Max balanced-accuracy": {
+      "threshold": 0.475,
+      "f1": 76.36,
+      "acc": 76.51,
+      "sensitivity": 79.75,
+      "specificity": 73.56
+    },
+    "Default 0.50": {
+      "threshold": 0.5,
+      "f1": 74.63,
+      "acc": 76.1,
+      "sensitivity": 73.84,
+      "specificity": 78.16
+    }
+  },
+  "eeg_sim_rho": 0.3
+}

@@ -1,0 +1,78 @@
+Nour_Autism_2_10_2011S001_Oct0211_1411_summary.txt
+Sun Oct 02 14:20:23 2011
+
+System ID = 	Amp ID = 	Montage ID = 
+
+SW Versions:
+Operator:
+	2245, 2009/02/03 15:58:46
+Signal Processing:
+	2245, 2009/02/03 15:58:46
+Application:
+	2245, 2009/02/03 15:58:46
+
+---------------------------------------------------
+Classifier Matrix:
+1 4 1 1 
+1 6 2 1 
+*** START OF RUN 1 IN ONLINE MODE ***
+Date = Oct/02/11		Time = 14:20
+Num of Sequences = 40
+MATRIX SIZE(s)
+6 x 6
+*** RUN SUMMARY ***
+System Pause Duration (in seconds): 0
+Number of Selections = 0
+
+Nour_Autism_2_10_2011S001_Oct0211_1411_summary.txt
+Sun Oct 02 14:44:44 2011
+
+System ID = 	Amp ID = 	Montage ID = 
+
+SW Versions:
+Operator:
+	2245, 2009/02/03 15:58:46
+Signal Processing:
+	2245, 2009/02/03 15:58:46
+Application:
+	2245, 2009/02/03 15:58:46
+
+---------------------------------------------------
+Classifier Matrix:
+1 4 1 1 
+1 6 2 1 
+*** START OF RUN 2 IN ONLINE MODE ***
+Date = Oct/02/11		Time = 14:44
+Num of Sequences = 40
+MATRIX SIZE(s)
+6 x 6
+*** RUN SUMMARY ***
+System Pause Duration (in seconds): 0
+Number of Selections = 0
+
+Nour_Autism_2_10_2011S001_Oct0211_1411_summary.txt
+Sun Oct 02 14:50:01 2011
+
+System ID = 	Amp ID = 	Montage ID = 
+
+SW Versions:
+Operator:
+	2245, 2009/02/03 15:58:46
+Signal Processing:
+	2245, 2009/02/03 15:58:46
+Application:
+	2245, 2009/02/03 15:58:46
+
+---------------------------------------------------
+Classifier Matrix:
+1 4 1 1 
+1 6 2 1 
+*** START OF RUN 3 IN ONLINE MODE ***
+Date = Oct/02/11		Time = 14:50
+Num of Sequences = 40
+MATRIX SIZE(s)
+6 x 6
+*** RUN SUMMARY ***
+System Pause Duration (in seconds): 0
+Number of Selections = 0
+

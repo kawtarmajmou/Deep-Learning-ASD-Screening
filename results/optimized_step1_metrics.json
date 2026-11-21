@@ -1,0 +1,8 @@
+{
+  "step": 1,
+  "model": "Baseline_CNN",
+  "epochs": 7,
+  "best_val_acc": 69.55017301038062,
+  "test_acc": 69.23963133640552,
+  "test_f1": 81.82437031994554
+}

@@ -1,0 +1,156 @@
+{
+  "dataset": "ABIDE fMRI - ComBat + Dynamic FC",
+  "total_subjects": 996,
+  "autism": 474,
+  "normal": 522,
+  "best_model": "WgtEnsemble top-5",
+  "cv_results": {
+    "LR PCA(100) Pearson-CB": {
+      "auc": 74.55,
+      "f1": 69.89,
+      "acc": 67.47,
+      "thr": 0.39
+    },
+    "LR PCA(100) Partial-CB": {
+      "auc": 68.82,
+      "f1": 67.21,
+      "acc": 63.35,
+      "thr": 0.44
+    },
+    "LR PCA(100) Dynamic-CB": {
+      "auc": 74.73,
+      "f1": 69.97,
+      "acc": 63.45,
+      "thr": 0.3
+    },
+    "LR PCA(100) Tangent-CB": {
+      "auc": 69.62,
+      "f1": 68.04,
+      "acc": 59.54,
+      "thr": 0.37
+    },
+    "LR PCA(100) P+Part-CB": {
+      "auc": 75.25,
+      "f1": 70.38,
+      "acc": 64.76,
+      "thr": 0.32
+    },
+    "LR PCA(100) P+Dyn-CB": {
+      "auc": 74.82,
+      "f1": 69.44,
+      "acc": 63.05,
+      "thr": 0.29
+    },
+    "SVM-RBF K=2000 Pearson-CB": {
+      "auc": 73.4,
+      "f1": 69.85,
+      "acc": 64.46,
+      "thr": 0.28
+    },
+    "SVM-RBF K=2000 Partial-CB": {
+      "auc": 66.87,
+      "f1": 63.16,
+      "acc": 62.75,
+      "thr": 0.32
+    },
+    "SVM-RBF K=2000 Dynamic-CB": {
+      "auc": 73.6,
+      "f1": 69.09,
+      "acc": 65.06,
+      "thr": 0.29
+    },
+    "SVM-RBF K=2000 Tangent-CB": {
+      "auc": 68.14,
+      "f1": 65.51,
+      "acc": 64.16,
+      "thr": 0.26
+    },
+    "SVM-RBF K=4000 Pearson-CB": {
+      "auc": 75.07,
+      "f1": 70.72,
+      "acc": 67.57,
+      "thr": 0.35
+    },
+    "SVM-RBF K=4000 P+Part-CB": {
+      "auc": 75.78,
+      "f1": 70.85,
+      "acc": 68.27,
+      "thr": 0.3
+    },
+    "HistGB K=2000 Pearson-CB": {
+      "auc": 72.65,
+      "f1": 67.98,
+      "acc": 65.76,
+      "thr": 0.28
+    },
+    "HistGB K=2000 Partial-CB": {
+      "auc": 58.8,
+      "f1": 61.64,
+      "acc": 53.01,
+      "thr": 0.25
+    },
+    "HistGB K=2000 Dynamic-CB": {
+      "auc": 71.49,
+      "f1": 68.17,
+      "acc": 64.46,
+      "thr": 0.26
+    },
+    "HistGB K=4000 Pearson-CB": {
+      "auc": 73.17,
+      "f1": 68.74,
+      "acc": 65.76,
+      "thr": 0.25
+    },
+    "MLP K=1000 Dynamic-CB": {
+      "auc": 73.05,
+      "f1": 69.45,
+      "acc": 65.46,
+      "thr": 0.25
+    },
+    "MLP K=1000 Tangent-CB": {
+      "auc": 67.76,
+      "f1": 64.19,
+      "acc": 64.16,
+      "thr": 0.25
+    },
+    "Stacking top-3": {
+      "auc": 75.8,
+      "f1": 71.08,
+      "acc": 67.97,
+      "thr": 0.38
+    },
+    "Stacking top-5": {
+      "auc": 75.75,
+      "f1": 71.05,
+      "acc": 67.27,
+      "thr": 0.36
+    },
+    "Stacking top-7": {
+      "auc": 75.62,
+      "f1": 70.89,
+      "acc": 66.77,
+      "thr": 0.35
+    },
+    "WgtEnsemble top-3": {
+      "auc": 75.99,
+      "f1": 71.1,
+      "acc": 65.56,
+      "thr": 0.28
+    },
+    "WgtEnsemble top-5": {
+      "auc": 76.05,
+      "f1": 71.13,
+      "acc": 67.57,
+      "thr": 0.35
+    },
+    "WgtEnsemble top-7": {
+      "auc": 76.0,
+      "f1": 71.37,
+      "acc": 67.37,
+      "thr": 0.34
+    }
+  },
+  "best_auc": 76.05,
+  "best_f1": 71.13,
+  "best_acc": 67.57
+}

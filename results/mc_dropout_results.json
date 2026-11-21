@@ -1,0 +1,30 @@
+{
+  "Baseline CNN": {
+    "mc_accuracy": 71.37,
+    "ece": 0.093316,
+    "entropy_mean": 0.423902,
+    "std_normal": 0.0465,
+    "std_autism": 0.045427
+  },
+  "MobileNetV2": {
+    "mc_accuracy": 71.77,
+    "ece": 0.072849,
+    "entropy_mean": 0.492305,
+    "std_normal": 0.03138,
+    "std_autism": 0.03445
+  },
+  "ResNet18": {
+    "mc_accuracy": 71.37,
+    "ece": 0.093454,
+    "entropy_mean": 0.40235,
+    "std_normal": 0.03859,
+    "std_autism": 0.03841
+  },
+  "CNN-LSTM": {
+    "mc_accuracy": 65.57,
+    "ece": 0.087078,
+    "entropy_mean": 0.542803,
+    "std_normal": 0.038668,
+    "std_autism": 0.053542
+  }
+}

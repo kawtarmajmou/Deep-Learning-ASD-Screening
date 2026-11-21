@@ -1,0 +1,70 @@
+{
+  "model": "LightCNNLSTM + Session-Level Voting",
+  "dataset": "16 subjects (11 ASD, 5 Normal), 11565 STFT spectrograms",
+  "protocol": "5-fold subject-level CV",
+  "mean": {
+    "auc": 76.67,
+    "f1": 83.0,
+    "accuracy": 89.29,
+    "sensitivity": 90.0,
+    "specificity": 80.0
+  },
+  "std": {
+    "auc": 32.66,
+    "f1": 23.1,
+    "accuracy": 13.17,
+    "sensitivity": 13.33,
+    "specificity": 40.0
+  },
+  "pooled_confusion_matrix": {
+    "TP": 10,
+    "FP": 1,
+    "TN": 4,
+    "FN": 2,
+    "sensitivity_pooled": 83.33,
+    "specificity_pooled": 80.0,
+    "accuracy_pooled": 82.35
+  },
+  "fold_results": [
+    {
+      "fold": 1,
+      "acc": 100.0,
+      "f1": 100.0,
+      "auc": 100.0,
+      "sens": 100.0,
+      "spec": 100.0
+    },
+    {
+      "fold": 2,
+      "acc": 100.0,
+      "f1": 100.0,
+      "auc": 100.0,
+      "sens": 100.0,
+      "spec": 100.0
+    },
+    {
+      "fold": 3,
+      "acc": 100.0,
+      "f1": 100.0,
+      "auc": 100.0,
+      "sens": 100.0,
+      "spec": 100.0
+    },
+    {
+      "fold": 4,
+      "acc": 75.0,
+      "f1": 73.33,
+      "auc": 66.67,
+      "sens": 66.67,
+      "spec": 100.0
+    },
+    {
+      "fold": 5,
+      "acc": 71.43,
+      "f1": 41.67,
+      "auc": 16.67,
+      "sens": 83.33,
+      "spec": 0.0
+    }
+  ]
+}

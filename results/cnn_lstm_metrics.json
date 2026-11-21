@@ -1,0 +1,20 @@
+{
+  "accuracy": 77.82,
+  "f1": 77.45,
+  "auc": 81.85,
+  "sensitivity": 86.38,
+  "specificity": 57.92,
+  "confusion_matrix": [
+    [
+      150,
+      109
+    ],
+    [
+      82,
+      520
+    ]
+  ],
+  "step": 4,
+  "model": "CNN-LSTM",
+  "best_val_acc": 77.9976717112922
+}

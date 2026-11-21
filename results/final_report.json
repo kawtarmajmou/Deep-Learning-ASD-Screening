@@ -1,0 +1,130 @@
+{
+  "model_metrics": {
+    "Baseline CNN": {
+      "accuracy": 57.89,
+      "f1": 59.81,
+      "auc": 64.42,
+      "sensitivity": 52.87,
+      "specificity": 70.42,
+      "threshold": 0.846
+    },
+    "MobileNetV2": {
+      "accuracy": 61.46,
+      "f1": 63.19,
+      "auc": 65.18,
+      "sensitivity": 62.71,
+      "specificity": 58.35,
+      "threshold": 0.702
+    },
+    "ResNet18": {
+      "accuracy": 59.74,
+      "f1": 61.6,
+      "auc": 65.5,
+      "sensitivity": 54.64,
+      "specificity": 72.43,
+      "threshold": 0.867
+    },
+    "CNN-LSTM": {
+      "accuracy": 61.22,
+      "f1": 62.52,
+      "auc": 68.54,
+      "sensitivity": 55.33,
+      "specificity": 74.03,
+      "threshold": 0.8321,
+      "confusion_matrix": [
+        [
+          134,
+          47
+        ],
+        [
+          176,
+          218
+        ]
+      ],
+      "step": 4,
+      "model": "CNN-LSTM",
+      "best_val_acc": 68.93542757417103
+    }
+  },
+  "mc_dropout": {
+    "Baseline CNN": {
+      "mc_accuracy": 71.37,
+      "ece": 0.093316,
+      "entropy_mean": 0.423902,
+      "std_normal": 0.0465,
+      "std_autism": 0.045427
+    },
+    "MobileNetV2": {
+      "mc_accuracy": 71.77,
+      "ece": 0.072849,
+      "entropy_mean": 0.492305,
+      "std_normal": 0.03138,
+      "std_autism": 0.03445
+    },
+    "ResNet18": {
+      "mc_accuracy": 71.37,
+      "ece": 0.093454,
+      "entropy_mean": 0.40235,
+      "std_normal": 0.03859,
+      "std_autism": 0.03841
+    },
+    "CNN-LSTM": {
+      "mc_accuracy": 65.57,
+      "ece": 0.087078,
+      "entropy_mean": 0.542803,
+      "std_normal": 0.038668,
+      "std_autism": 0.053542
+    }
+  },
+  "summary": {
+    "Baseline CNN": {
+      "accuracy": 57.89,
+      "f1": 59.81,
+      "auc": 64.42,
+      "sensitivity": 52.87,
+      "specificity": 70.42,
+      "threshold": 0.846,
+      "ece": 0.093316
+    },
+    "MobileNetV2": {
+      "accuracy": 61.46,
+      "f1": 63.19,
+      "auc": 65.18,
+      "sensitivity": 62.71,
+      "specificity": 58.35,
+      "threshold": 0.702,
+      "ece": 0.072849
+    },
+    "ResNet18": {
+      "accuracy": 59.74,
+      "f1": 61.6,
+      "auc": 65.5,
+      "sensitivity": 54.64,
+      "specificity": 72.43,
+      "threshold": 0.867,
+      "ece": 0.093454
+    },
+    "CNN-LSTM": {
+      "accuracy": 61.22,
+      "f1": 62.52,
+      "auc": 68.54,
+      "sensitivity": 55.33,
+      "specificity": 74.03,
+      "threshold": 0.8321,
+      "confusion_matrix": [
+        [
+          134,
+          47
+        ],
+        [
+          176,
+          218
+        ]
+      ],
+      "step": 4,
+      "model": "CNN-LSTM",
+      "best_val_acc": 68.93542757417103,
+      "ece": 0.087078
+    }
+  }
+}

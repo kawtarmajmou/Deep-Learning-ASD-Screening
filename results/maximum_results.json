@@ -1,0 +1,70 @@
+{
+  "ResNet18": {
+    "accuracy": 63.68,
+    "f1": 57.59,
+    "auc": 61.25,
+    "sensitivity": 72.76,
+    "specificity": 42.69,
+    "confusion_matrix": [
+      [
+        298,
+        400
+      ],
+      [
+        440,
+        1175
+      ]
+    ]
+  },
+  "MobileNet": {
+    "accuracy": 60.66,
+    "f1": 55.45,
+    "auc": 58.74,
+    "sensitivity": 67.93,
+    "specificity": 43.84,
+    "confusion_matrix": [
+      [
+        306,
+        392
+      ],
+      [
+        518,
+        1097
+      ]
+    ]
+  },
+  "Combined": {
+    "accuracy": 62.65,
+    "f1": 56.86,
+    "auc": 61.1,
+    "sensitivity": 71.08,
+    "specificity": 43.12,
+    "confusion_matrix": [
+      [
+        301,
+        397
+      ],
+      [
+        467,
+        1148
+      ]
+    ]
+  },
+  "ENSEMBLE": {
+    "accuracy": 64.38,
+    "f1": 57.66,
+    "auc": 63.07,
+    "sensitivity": 74.61,
+    "specificity": 40.69,
+    "confusion_matrix": [
+      [
+        284,
+        414
+      ],
+      [
+        410,
+        1205
+      ]
+    ]
+  }
+}

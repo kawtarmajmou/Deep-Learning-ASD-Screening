@@ -1,0 +1,30 @@
+{
+  "CNN": {
+    "accuracy": 63.77,
+    "f1": 60.4,
+    "auc": 65.2,
+    "sensitivity": 66.56,
+    "specificity": 57.31
+  },
+  "MobileNetV2": {
+    "accuracy": 63.16,
+    "f1": 60.34,
+    "auc": 65.4,
+    "sensitivity": 64.33,
+    "specificity": 60.46
+  },
+  "ResNet18": {
+    "accuracy": 62.69,
+    "f1": 59.53,
+    "auc": 64.61,
+    "sensitivity": 64.89,
+    "specificity": 57.59
+  },
+  "Ensemble": {
+    "accuracy": 63.55,
+    "f1": 61.05,
+    "auc": 66.51,
+    "sensitivity": 63.65,
+    "specificity": 63.32
+  }
+}

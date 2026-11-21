@@ -1,0 +1,269 @@
+{
+  "SVM-TTA": {
+    "cv_mean": {
+      "acc": 83.77,
+      "f1": 71.92,
+      "auc": 70.33,
+      "sens": 89.02,
+      "spec": 60.05
+    },
+    "cv_std": {
+      "acc": 8.76,
+      "f1": 21.93,
+      "auc": 29.65,
+      "sens": 11.3,
+      "spec": 45.89
+    },
+    "fold_results": [
+      {
+        "fold": 1,
+        "test": [
+          "Amer",
+          "Bader",
+          "Deena"
+        ],
+        "acc": 88.01,
+        "f1": 87.73,
+        "auc": 90.27,
+        "sens": 81.95,
+        "spec": 98.34,
+        "thr": 0.7
+      },
+      {
+        "fold": 2,
+        "test": [
+          "Dhelal",
+          "Duaa",
+          "Mada"
+        ],
+        "acc": 82.11,
+        "f1": 81.98,
+        "auc": 86.04,
+        "sens": 70.28,
+        "spec": 95.1,
+        "thr": 0.72
+      },
+      {
+        "fold": 3,
+        "test": [
+          "Mahmud",
+          "Mohammed",
+          "MohammedAshi"
+        ],
+        "acc": 98.4,
+        "f1": 98.02,
+        "auc": 99.63,
+        "sens": 98.21,
+        "spec": 98.91,
+        "thr": 0.7
+      },
+      {
+        "fold": 4,
+        "test": [
+          "Majdolin",
+          "Nour",
+          "Omar"
+        ],
+        "acc": 76.05,
+        "f1": 49.26,
+        "auc": 57.68,
+        "sens": 94.65,
+        "spec": 7.89,
+        "thr": 0.42
+      },
+      {
+        "fold": 5,
+        "test": [
+          "Omran",
+          "Shahad",
+          "Yahia",
+          "Zyad"
+        ],
+        "acc": 74.3,
+        "f1": 42.63,
+        "auc": 18.05,
+        "sens": 100.0,
+        "spec": 0.0,
+        "thr": 0.1
+      }
+    ]
+  },
+  "LR-TTA": {
+    "cv_mean": {
+      "acc": 78.12,
+      "f1": 67.54,
+      "auc": 66.88,
+      "sens": 83.8,
+      "spec": 54.91
+    },
+    "cv_std": {
+      "acc": 5.79,
+      "f1": 15.41,
+      "auc": 25.79,
+      "sens": 12.6,
+      "spec": 35.73
+    },
+    "fold_results": [
+      {
+        "fold": 1,
+        "test": [
+          "Amer",
+          "Bader",
+          "Deena"
+        ],
+        "acc": 71.21,
+        "f1": 70.58,
+        "auc": 75.16,
+        "sens": 68.13,
+        "spec": 76.45,
+        "thr": 0.56
+      },
+      {
+        "fold": 2,
+        "test": [
+          "Dhelal",
+          "Duaa",
+          "Mada"
+        ],
+        "acc": 81.44,
+        "f1": 81.31,
+        "auc": 85.79,
+        "sens": 69.85,
+        "spec": 94.17,
+        "thr": 0.5
+      },
+      {
+        "fold": 3,
+        "test": [
+          "Mahmud",
+          "Mohammed",
+          "MohammedAshi"
+        ],
+        "acc": 87.62,
+        "f1": 84.53,
+        "auc": 91.26,
+        "sens": 91.32,
+        "spec": 77.9,
+        "thr": 0.54
+      },
+      {
+        "fold": 4,
+        "test": [
+          "Majdolin",
+          "Nour",
+          "Omar"
+        ],
+        "acc": 76.05,
+        "f1": 58.63,
+        "auc": 63.16,
+        "sens": 89.7,
+        "spec": 26.02,
+        "thr": 0.24
+      },
+      {
+        "fold": 5,
+        "test": [
+          "Omran",
+          "Shahad",
+          "Yahia",
+          "Zyad"
+        ],
+        "acc": 74.3,
+        "f1": 42.63,
+        "auc": 19.01,
+        "sens": 100.0,
+        "spec": 0.0,
+        "thr": 0.1
+      }
+    ]
+  },
+  "BestEnsemble": {
+    "cv_mean": {
+      "acc": 78.99,
+      "f1": 71.89,
+      "auc": 72.36,
+      "sens": 81.53,
+      "spec": 68.37
+    },
+    "cv_std": {
+      "acc": 17.51,
+      "f1": 23.36,
+      "auc": 29.93,
+      "sens": 21.22,
+      "spec": 36.74
+    },
+    "fold_results": [
+      {
+        "fold": 1,
+        "test": [
+          "Amer",
+          "Bader",
+          "Deena"
+        ],
+        "acc": 92.01,
+        "f1": 91.43,
+        "auc": 96.53,
+        "sens": 93.66,
+        "spec": 89.2,
+        "thr": 0.44
+      },
+      {
+        "fold": 2,
+        "test": [
+          "Dhelal",
+          "Duaa",
+          "Mada"
+        ],
+        "acc": 82.0,
+        "f1": 81.87,
+        "auc": 86.63,
+        "sens": 70.28,
+        "spec": 94.87,
+        "thr": 0.68
+      },
+      {
+        "fold": 3,
+        "test": [
+          "Mahmud",
+          "Mohammed",
+          "MohammedAshi"
+        ],
+        "acc": 98.5,
+        "f1": 98.13,
+        "auc": 99.82,
+        "sens": 98.76,
+        "spec": 97.83,
+        "thr": 0.52
+      },
+      {
+        "fold": 4,
+        "test": [
+          "Majdolin",
+          "Nour",
+          "Omar"
+        ],
+        "acc": 48.15,
+        "f1": 45.4,
+        "auc": 58.98,
+        "sens": 44.93,
+        "spec": 59.94,
+        "thr": 0.42
+      },
+      {
+        "fold": 5,
+        "test": [
+          "Omran",
+          "Shahad",
+          "Yahia",
+          "Zyad"
+        ],
+        "acc": 74.3,
+        "f1": 42.63,
+        "auc": 19.83,
+        "sens": 100.0,
+        "spec": 0.0,
+        "thr": 0.1
+      }
+    ]
+  }
+}

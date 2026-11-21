@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>ASD Detection - Professional Mockups & Showcases</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:100%;height:100%;margin:0;padding:0}
+body{
+  font-family:'Segoe UI',system-ui,-apple-system,sans-serif;
+  background:#ffffff;color:#1f2937;line-height:1.6;
+}
+
+/* ═══════════════════════════════════════════════════════════════ */
+/* SECTION HEADER */
+/* ═══════════════════════════════════════════════════════════════ */
+.section{
+  padding:80px 60px;margin:0;
+  page-break-after:always;background:#fff;
+}
+.section-dark{background:linear-gradient(135deg,#2563eb 0%,#1e40af 100%);color:#fff}
+.section h1{font-size:2.8rem;font-weight:800;margin-bottom:20px;line-height:1.2}
+.section h2{font-size:2.2rem;font-weight:700;margin-bottom:30px;color:#1e40af}
+.section-dark h1,.section-dark h2{color:#fff}
+.section p{font-size:1.1rem;line-height:1.8;color:#6b7280}
+.section-dark p{color:#dbeafe}
+
+/* ═══════════════════════════════════════════════════════════════ */
+/* HERO SHOWCASE */
+/* ═══════════════════════════════════════════════════════════════ */
+.hero-showcase{
+  display:flex;align-items:center;gap:60px;max-width:1400px;margin:0 auto;
+}
+.hero-left h1{font-size:3.5rem;margin-bottom:20px}
+.hero-left h1 em{color:#2563eb}
+.hero-left .desc{font-size:1.2rem;line-height:1.8;margin-bottom:40px;color:#6b7280}
+.hero-stats{display:flex;gap:30px;flex-wrap:wrap}
+.stat{flex:1;min-width:150px}
+.stat-num{font-size:2.2rem;font-weight:800;color:#2563eb;display:block}
+.stat-label{font-size:.95rem;color:#6b7280;text-transform:uppercase;letter-spacing:.05em;font-weight:600}
+.hero-right{flex:1;position:relative}
+.hero-image{
+  width:100%;aspect-ratio:1;
+  background:linear-gradient(135deg,#eff6ff 0%,#dbeafe 100%);
+  border-radius:20px;box-shadow:0 30px 60px rgba(0,0,0,.15);
+  display:flex;align-items:center;justify-content:center;
+  font-size:4rem;
+}
+
+/* ═══════════════════════════════════════════════════════════════ */
+/* DEVICE MOCKUPS GRID */
+/* ═══════════════════════════════════════════════════════════════ */
+.mockups-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:40px;
+  max-width:1400px;margin:0 auto;
+}
+
+.mockup-card{
+  background:#fff;border-radius:20px;padding:25px;
+  box-shadow:0 20px 50px rgba(0,0,0,.12);
+  text-align:center;
+  position:relative;
+  overflow:hidden;
+}
+
+.mockup-card h3{
+  font-size:1.3rem;font-weight:700;color:#1e40af;margin-bottom:20px;
+}
+
+/* DESKTOP MOCKUP */
+.desktop-frame{
+  width:100%;aspect-ratio:16/10;
+  background:linear-gradient(135deg,#f8f9fa,#f0f4f8);
+  border-radius:12px;overflow:hidden;
+  position:relative;border:8px solid #2c3e50;
+  box-shadow:inset 0 0 0 1px #1a1a1a;
+}
+.desktop-frame::before{
+  content:'';position:absolute;bottom:-15px;left:0;right:0;
+  height:30px;background:#2c3e50;border-radius:0 0 20px 20px;
+}
+.desktop-frame::after{
+  content:'●';position:absolute;bottom:5px;left:50%;transform:translateX(-50%);
+  font-size:1.5rem;color:#1a1a1a;
+}
+.desktop-content{
+  width:100%;height:100%;padding:15px;background:#fff;
+  display:flex;flex-direction:column;gap:10px;
+}
+.desktop-content .bar{height:8px;background:#2563eb;opacity:.1;border-radius:2px}
+.desktop-content .bar:first-child{opacity:.15;width:40%}
+.desktop-content .bar:nth-child(3){width:100%}
+.desktop-content .bar:nth-child(4){width:85%}
+.desktop-content .bar:nth-child(5){width:70%}
+
+/* TABLET MOCKUP */
+.tablet-frame{
+  width:100%;aspect-ratio:4/5;
+  background:linear-gradient(135deg,#f8f9fa,#f0f4f8);
+  border-radius:20px;overflow:hidden;
+  position:relative;border:12px solid #2c3e50;
+  box-shadow:inset 0 0 0 1px #1a1a1a;
+}
+.tablet-frame::before{
+  content:'';position:absolute;top:-12px;left:50%;transform:translateX(-50%);
+  width:30%;height:8px;background:#2c3e50;border-radius:0 0 15px 15px;
+}
+.tablet-content{
+  width:100%;height:100%;padding:12px;background:#fff;
+  display:flex;flex-direction:column;gap:8px;
+}
+.tablet-content .bar{height:6px;background:#2563eb;opacity:.1;border-radius:2px}
+.tablet-content .bar:first-child{opacity:.15;width:35%}
+.tablet-content .bar:nth-child(3){width:100%}
+.tablet-content .bar:nth-child(4){width:90%}
+.tablet-content .bar:nth-child(5){width:75%}
+
+/* MOBILE MOCKUP */
+.mobile-frame{
+  width:100%;max-width:320px;margin:0 auto;aspect-ratio:9/19;
+  background:linear-gradient(135deg,#f8f9fa,#f0f4f8);
+  border-radius:40px;overflow:hidden;
+  position:relative;border:8px solid #2c3e50;
+  box-shadow:inset 0 0 0 1px #1a1a1a;
+}
+.mobile-frame::before{
+  content:'';position:absolute;top:-8px;left:50%;transform:translateX(-50%);
+  width:40%;height:16px;background:#2c3e50;border-radius:0 0 18px 18px;
+}
+.mobile-frame::after{
+  content:'';position:absolute;bottom:5px;left:50%;transform:translateX(-50%);
+  width:30px;height:3px;background:#1a1a1a;border-radius:2px;
+}
+.mobile-content{
+  width:100%;height:100%;padding:8px;background:#fff;
+  display:flex;flex-direction:column;gap:6px;
+}
+.mobile-content .bar{height:4px;background:#2563eb;opacity:.1;border-radius:1px}
+.mobile-content .bar:first-child{opacity:.15;width:30%;margin-top:8px}
+.mobile-content .bar:nth-child(3){width:100%}
+.mobile-content .bar:nth-child(4){width:95%}
+.mobile-content .bar:nth-child(5){width:80%}
+
+/* ═══════════════════════════════════════════════════════════════ */
+/* FEATURES SHOWCASE */
+/* ═══════════════════════════════════════════════════════════════ */
+.features-showcase{
+  display:grid;grid-template-columns:repeat(2,1fr);gap:30px;
+  max-width:1000px;margin:0 auto;
+}
+
+.feature-showcase{
+  background:#fff;padding:35px 30px;border-radius:16px;
+  box-shadow:0 10px 35px rgba(0,0,0,.08);
+  border-left:5px solid #2563eb;
+  transition:transform .3s,box-shadow .3s;
+}
+
+.feature-showcase:hover{
+  transform:translateY(-8px);box-shadow:0 20px 50px rgba(0,0,0,.12);
+}
+
+.feature-showcase h3{font-size:1.3rem;margin-bottom:12px;color:#1e40af}
+.feature-showcase .metric{
+  display:flex;align-items:baseline;gap:10px;margin:10px 0;
+}
+.feature-showcase .metric-val{
+  font-size:1.8rem;font-weight:800;color:#2563eb;
+}
+.feature-showcase .metric-label{font-size:.9rem;color:#6b7280}
+
+/* ═══════════════════════════════════════════════════════════════ */
+/* COMPARISON TABLE */
+/* ═══════════════════════════════════════════════════════════════ */
+.comparison-table{
+  width:100%;max-width:1000px;margin:0 auto;
+  border-collapse:collapse;
+  box-shadow:0 10px 30px rgba(0,0,0,.1);
+  border-radius:12px;overflow:hidden;
+}
+
+.comparison-table th{
+  background:linear-gradient(135deg,#2563eb,#1e40af);
+  color:#fff;padding:20px 25px;
+  text-align:left;font-weight:700;
+  border:none;
+}
+
+.comparison-table td{
+  padding:18px 25px;border-bottom:1px solid #e5e7eb;
+}
+
+.comparison-table tr:last-child td{border-bottom:none}
+
+.comparison-table tr:nth-child(even){background:#f9fafb}
+
+.comparison-table .model-name{font-weight:700;color:#1f2937}
+
+.comparison-table .highlight{background:#eff6ff;font-weight:700;color:#1e40af}
+
+/* ═══════════════════════════════════════════════════════════════ */
+/* WORKFLOW VISUAL */
+/* ═══════════════════════════════════════════════════════════════ */
+.workflow-visual{
+  display:flex;align-items:center;justify-content:center;gap:15px;
+  flex-wrap:wrap;max-width:1000px;margin:0 auto;
+}
+
+.workflow-node{
+  flex:0 0 auto;
+  width:120px;height:120px;
+  background:linear-gradient(135deg,#2563eb,#1e40af);
+  border-radius:12px;
+  display:flex;align-items:center;justify-content:center;
+  color:#fff;font-weight:700;
+  text-align:center;
+  padding:10px;
+  box-shadow:0 10px 30px rgba(37,99,235,.2);
+}
+
+.workflow-node-label{font-size:.85rem;opacity:.8}
+.workflow-node-title{font-size:1.1rem}
+
+.workflow-arrow{
+  width:40px;height:3px;background:linear-gradient(90deg,transparent,#2563eb,transparent);
+}
+
+/* ═══════════════════════════════════════════════════════════════ */
+/* METRICS GRID */
+/* ═══════════════════════════════════════════════════════════════ */
+.metrics-grid{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:20px;
+  max-width:1200px;margin:0 auto;
+}
+
+.metric-card{
+  background:#fff;padding:30px 20px;border-radius:12px;
+  box-shadow:0 10px 30px rgba(0,0,0,.08);
+  text-align:center;
+  border-top:4px solid #2563eb;
+}
+
+.metric-card .value{
+  font-size:2.5rem;font-weight:800;color:#2563eb;margin-bottom:8px;
+}
+
+.metric-card .label{
+  font-size:.95rem;color:#6b7280;font-weight:600;text-transform:uppercase;
+  letter-spacing:.05em;
+}
+
+/* ═══════════════════════════════════════════════════════════════ */
+/* LAYOUT & RESPONSIVE */
+/* ═══════════════════════════════════════════════════════════════ */
+.container{max-width:1400px;margin:0 auto}
+
+@media(max-width:1200px){
+  .section{padding:60px 40px}
+  .hero-showcase{flex-direction:column;gap:40px}
+  .mockups-grid{grid-template-columns:repeat(2,1fr)}
+  .features-showcase{grid-template-columns:1fr}
+  .metrics-grid{grid-template-columns:repeat(2,1fr)}
+}
+
+@media(max-width:768px){
+  .section{padding:40px 20px}
+  .section h1{font-size:2rem}
+  .section h2{font-size:1.5rem}
+  .mockups-grid{grid-template-columns:1fr}
+  .hero-stats{flex-direction:column;gap:20px}
+  .comparison-table{font-size:.9rem}
+  .comparison-table th,.comparison-table td{padding:12px 15px}
+  .workflow-visual{gap:10px}
+  .workflow-arrow{width:25px;height:2px}
+  .metrics-grid{grid-template-columns:1fr}
+}
+
+@media print{
+  body{background:#fff}
+  .section{page-break-after:always}
+}
+
+/* ═══════════════════════════════════════════════════════════════ */
+/* SHADOW & DEPTH EFFECTS */
+/* ═══════════════════════════════════════════════════════════════ */
+.shadow-lg{box-shadow:0 25px 50px rgba(0,0,0,.15)}
+.shadow-xl{box-shadow:0 40px 80px rgba(0,0,0,.2)}
+
+/* ═══════════════════════════════════════════════════════════════ */
+/* BACKGROUND PATTERNS */
+/* ═══════════════════════════════════════════════════════════════ */
+.pattern-dots{
+  background-image:radial-gradient(circle,#2563eb 1px,transparent 1px);
+  background-size:20px 20px;
+  background-position:0 0;
+  opacity:.05;
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+}
+</style>
+</head>
+<body>
+
+<!-- ════════════════════════════════════════════════════════════ -->
+<!-- HERO SECTION -->
+<!-- ════════════════════════════════════════════════════════════ -->
+<div class="section section-dark">
+  <div class="container">
+    <div class="hero-showcase">
+      <div class="hero-left">
+        <h1>🧠 <em>Autism Spectrum</em><br/>Detection System</h1>
+        <p class="desc">AI-powered multimodal screening combining EEG and fMRI neuroimaging with deep learning for early, non-invasive autism detection</p>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num">83.56%</span>
+            <span class="stat-label">AUC (Best)</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">1,012</span>
+            <span class="stat-label">Total Subjects</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">2</span>
+            <span class="stat-label">Modalities</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="hero-image">💻 + 📱</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════════════════════ -->
+<!-- DEVICE SHOWCASES -->
+<!-- ════════════════════════════════════════════════════════════ -->
+<div class="section">
+  <h2 style="text-align:center;margin-bottom:50px">📱 Responsive Design Showcase</h2>
+  <div class="mockups-grid">
+    <div class="mockup-card">
+      <h3>💻 Desktop</h3>
+      <div class="desktop-frame">
+        <div class="desktop-content">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
+      <p style="margin-top:20px;color:#6b7280;font-size:.95rem">Full-featured interface optimized for desktop and large screens with comprehensive analytics dashboard</p>
+    </div>
+
+    <div class="mockup-card">
+      <h3>📊 Tablet</h3>
+      <div class="tablet-frame">
+        <div class="tablet-content">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
+      <p style="margin-top:20px;color:#6b7280;font-size:.95rem">Responsive layout adapts beautifully to tablet screens with touch-friendly interface</p>
+    </div>
+
+    <div class="mockup-card">
+      <h3>📱 Mobile</h3>
+      <div class="mobile-frame">
+        <div class="mobile-content">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
+      <p style="margin-top:20px;color:#6b7280;font-size:.95rem">Optimized mobile experience for on-the-go analysis and predictions</p>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════════════════════ -->
+<!-- FEATURES SECTION -->
+<!-- ════════════════════════════════════════════════════════════ -->
+<div class="section">
+  <h2 style="text-align:center;margin-bottom:40px">✨ Core Features</h2>
+  <div class="features-showcase">
+    <div class="feature-showcase">
+      <h3>📊 EEG Analysis</h3>
+      <div class="metric">
+        <span class="metric-val">89.29%</span>
+        <span class="metric-label">Accuracy</span>
+      </div>
+      <div class="metric">
+        <span class="metric-val">76.67%</span>
+        <span class="metric-label">AUC Score</span>
+      </div>
+      <p style="margin-top:15px;color:#6b7280;font-size:.95rem">CNN-LSTM deep learning processes temporal STFT spectrograms with sequence voting</p>
+    </div>
+
+    <div class="feature-showcase">
+      <h3>🧬 fMRI Processing</h3>
+      <div class="metric">
+        <span class="metric-val">76.05%</span>
+        <span class="metric-label">AUC (Best)</span>
+      </div>
+      <div class="metric">
+        <span class="metric-val">71.13%</span>
+        <span class="metric-label">F1 Score</span>
+      </div>
+      <p style="margin-top:15px;color:#6b7280;font-size:.95rem">ComBat-harmonized connectivity with Pearson + Partial correlation features</p>
+    </div>
+
+    <div class="feature-showcase">
+      <h3>🔀 Multimodal Fusion</h3>
+      <div class="metric">
+        <span class="metric-val">83.56%</span>
+        <span class="metric-label">AUC (Fusion)</span>
+      </div>
+      <div class="metric">
+        <span class="metric-val">76.94%</span>
+        <span class="metric-label">F1 Score</span>
+      </div>
+      <p style="margin-top:15px;color:#6b7280;font-size:.95rem">Temperature-calibrated ensemble breakthrough combining both modalities</p>
+    </div>
+
+    <div class="feature-showcase">
+      <h3>⚡ Real-Time Predictions</h3>
+      <div class="metric">
+        <span class="metric-val">< 2s</span>
+        <span class="metric-label">Inference Time</span>
+      </div>
+      <div class="metric">
+        <span class="metric-val">100%</span>
+        <span class="metric-label">Uptime</span>
+      </div>
+      <p style="margin-top:15px;color:#6b7280;font-size:.95rem">Instant analysis with confidence scores and detailed clinical insights</p>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════════════════════ -->
+<!-- METRICS SHOWCASE -->
+<!-- ════════════════════════════════════════════════════════════ -->
+<div class="section">
+  <h2 style="text-align:center;margin-bottom:40px">📈 Performance Metrics</h2>
+  <div class="metrics-grid">
+    <div class="metric-card">
+      <div class="value">83.56%</div>
+      <div class="label">AUC (Fusion)</div>
+    </div>
+    <div class="metric-card">
+      <div class="value">76.94%</div>
+      <div class="label">F1 Score</div>
+    </div>
+    <div class="metric-card">
+      <div class="value">83.76%</div>
+      <div class="label">Sensitivity</div>
+    </div>
+    <div class="metric-card">
+      <div class="value">69.16%</div>
+      <div class="label">Specificity</div>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════════════════════ -->
+<!-- WORKFLOW SECTION -->
+<!-- ════════════════════════════════════════════════════════════ -->
+<div class="section">
+  <h2 style="text-align:center;margin-bottom:50px">🔄 Analysis Workflow</h2>
+  <div class="workflow-visual">
+    <div class="workflow-node">
+      <div>
+        <div class="workflow-node-label">Step 1</div>
+        <div class="workflow-node-title">Upload</div>
+      </div>
+    </div>
+    <div class="workflow-arrow"></div>
+    <div class="workflow-node">
+      <div>
+        <div class="workflow-node-label">Step 2</div>
+        <div class="workflow-node-title">Process</div>
+      </div>
+    </div>
+    <div class="workflow-arrow"></div>
+    <div class="workflow-node">
+      <div>
+        <div class="workflow-node-label">Step 3</div>
+        <div class="workflow-node-title">Analyze</div>
+      </div>
+    </div>
+    <div class="workflow-arrow"></div>
+    <div class="workflow-node">
+      <div>
+        <div class="workflow-node-label">Step 4</div>
+        <div class="workflow-node-title">Predict</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════════════════════ -->
+<!-- COMPARISON TABLE -->
+<!-- ════════════════════════════════════════════════════════════ -->
+<div class="section">
+  <h2 style="text-align:center;margin-bottom:40px">📊 Model Performance Comparison</h2>
+  <table class="comparison-table">
+    <thead>
+      <tr>
+        <th>Model</th>
+        <th>AUC</th>
+        <th>F1 Score</th>
+        <th>Accuracy</th>
+        <th>Dataset</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="model-name">EEG-Only (CNN-LSTM)</td>
+        <td>76.67%</td>
+        <td>83.00%</td>
+        <td>89.29%</td>
+        <td>16 subjects</td>
+      </tr>
+      <tr>
+        <td class="model-name">fMRI-Only (SVM-RBF)</td>
+        <td>75.78%</td>
+        <td>70.85%</td>
+        <td>68.27%</td>
+        <td>996 subjects</td>
+      </tr>
+      <tr>
+        <td class="model-name">fMRI Best (Ensemble)</td>
+        <td>76.05%</td>
+        <td>71.13%</td>
+        <td>67.57%</td>
+        <td>996 subjects</td>
+      </tr>
+      <tr class="highlight">
+        <td class="model-name">🏆 Multimodal Fusion</td>
+        <td>83.56%</td>
+        <td>76.94%</td>
+        <td>78.00%</td>
+        <td>1,012 subjects</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ════════════════════════════════════════════════════════════ -->
+<!-- CLOSING SECTION -->
+<!-- ════════════════════════════════════════════════════════════ -->
+<div class="section section-dark" style="text-align:center">
+  <h1 style="font-size:2.8rem;margin-bottom:20px">🎓 Research Excellence</h1>
+  <p style="font-size:1.2rem;max-width:600px;margin:0 auto 40px;line-height:1.8">
+    Advancing early autism spectrum disorder detection through cutting-edge multimodal deep learning and neuroimaging analysis
+  </p>
+  <div style="display:flex;gap:40px;justify-content:center;flex-wrap:wrap;margin-top:50px">
+    <div>
+      <div style="font-size:1.8rem;font-weight:800;color:#fff;margin-bottom:5px">Kawtar Majmou</div>
+      <div style="font-size:.95rem;color:#dbeafe">Researcher & Developer</div>
+    </div>
+    <div style="border-left:2px solid #dbeafe;padding-left:40px">
+      <div style="font-size:1.8rem;font-weight:800;color:#fff;margin-bottom:5px">Sichuan University</div>
+      <div style="font-size:.95rem;color:#dbeafe">2026 Thesis Defense</div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

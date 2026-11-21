@@ -1,0 +1,52 @@
+Mada_Autism_26_5_2011S001_May2611_1026_summary.txt
+Thu May 26 10:40:57 2011
+
+System ID = 	Amp ID = 	Montage ID = 
+
+SW Versions:
+Operator:
+	2245, 2009/02/03 15:58:46
+Signal Processing:
+	2245, 2009/02/03 15:58:46
+Application:
+	2245, 2009/02/03 15:58:46
+
+---------------------------------------------------
+Classifier Matrix:
+1 4 1 1 
+1 6 2 1 
+*** START OF RUN 1 IN ONLINE MODE ***
+Date = May/26/11		Time = 10:40
+Num of Sequences = 40
+MATRIX SIZE(s)
+6 x 6
+*** RUN SUMMARY ***
+System Pause Duration (in seconds): 0
+Number of Selections = 0
+
+Mada_Autism_26_5_2011S001_May2611_1026_summary.txt
+Thu May 26 10:55:44 2011
+
+System ID = 	Amp ID = 	Montage ID = 
+
+SW Versions:
+Operator:
+	2245, 2009/02/03 15:58:46
+Signal Processing:
+	2245, 2009/02/03 15:58:46
+Application:
+	2245, 2009/02/03 15:58:46
+
+---------------------------------------------------
+Classifier Matrix:
+1 4 1 1 
+1 6 2 1 
+*** START OF RUN 2 IN ONLINE MODE ***
+Date = May/26/11		Time = 10:55
+Num of Sequences = 40
+MATRIX SIZE(s)
+6 x 6
+*** RUN SUMMARY ***
+System Pause Duration (in seconds): 0
+Number of Selections = 0
+

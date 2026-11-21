@@ -1,0 +1,194 @@
+{
+  "segment_level_results": {
+    "Baseline CNN": {
+      "accuracy": 69.24,
+      "f1_macro": null,
+      "auc": null,
+      "test_f1_weighted": 81.82,
+      "note": "segment-level split"
+    },
+    "MobileNetV2": {
+      "accuracy": 69.47,
+      "f1_macro": null,
+      "auc": null,
+      "test_f1_weighted": 81.99,
+      "note": "segment-level split"
+    },
+    "ResNet18": {
+      "accuracy": 59.74,
+      "f1_macro": 61.6,
+      "auc": 65.5,
+      "sensitivity": 54.64,
+      "specificity": 72.43,
+      "note": "segment-level split"
+    },
+    "CNN-LSTM (best)": {
+      "accuracy": 77.82,
+      "f1_macro": 77.45,
+      "auc": 81.85,
+      "sensitivity": 86.38,
+      "specificity": 57.92,
+      "note": "segment-level split; best overall model"
+    }
+  },
+  "subject_level_evaluation": {
+    "CNN-LSTM-V2 (5-fold subject CV)": {
+      "pooled_accuracy": 83.84,
+      "pooled_f1": 78.89,
+      "pooled_auc": 69.37,
+      "cv_acc_mean": 84.96,
+      "cv_acc_std": 8.93,
+      "cv_f1_mean": 72.49,
+      "cv_f1_std": 22.55,
+      "cv_auc_mean": 72.05,
+      "cv_auc_std": 30.16,
+      "fold_details": [
+        {
+          "fold": 1,
+          "subjects": [
+            "Amer",
+            "Bader",
+            "Deena"
+          ],
+          "acc": 91.9,
+          "f1": 91.3,
+          "auc": 97.2
+        },
+        {
+          "fold": 2,
+          "subjects": [
+            "Dhelal",
+            "Duaa",
+            "Mada"
+          ],
+          "acc": 81.7,
+          "f1": 81.5,
+          "auc": 86.1
+        },
+        {
+          "fold": 3,
+          "subjects": [
+            "Mahmud",
+            "Mohammed",
+            "MohammedAshi"
+          ],
+          "acc": 98.5,
+          "f1": 98.1,
+          "auc": 99.8
+        },
+        {
+          "fold": 4,
+          "subjects": [
+            "Majdolin",
+            "Nour",
+            "Omar"
+          ],
+          "acc": 78.4,
+          "f1": 48.8,
+          "auc": 57.2
+        },
+        {
+          "fold": 5,
+          "subjects": [
+            "Omran",
+            "Shahad",
+            "Yahia",
+            "Zyad"
+          ],
+          "acc": 74.3,
+          "f1": 42.6,
+          "auc": 19.9
+        }
+      ],
+      "note": "Model trained with segment-level split, evaluated on held-out subjects"
+    }
+  },
+  "uncertainty_quantification": {
+    "Baseline CNN": {
+      "mc_accuracy": 71.37,
+      "ece": 0.093,
+      "entropy": 0.424,
+      "std_autism": 0.045
+    },
+    "MobileNetV2": {
+      "mc_accuracy": 71.77,
+      "ece": 0.073,
+      "entropy": 0.492,
+      "std_autism": 0.034
+    },
+    "ResNet18": {
+      "mc_accuracy": 71.37,
+      "ece": 0.093,
+      "entropy": 0.402,
+      "std_autism": 0.038
+    },
+    "CNN-LSTM": {
+      "mc_accuracy": 65.57,
+      "ece": 0.087,
+      "entropy": 0.543,
+      "std_autism": 0.054
+    }
+  },
+  "key_findings": [
+    "CNN-LSTM achieves best performance at 77.82% accuracy, 81.85% AUC (segment-level)",
+    "Subject-level CV reveals high variance (AUC 20-99%) reflecting individual EEG differences",
+    "Folds 1-3 show excellent generalization (AUC 86-99%); folds 4-5 show challenges",
+    "MobileNetV2 has best calibration (ECE=0.073, lowest uncertainty)",
+    "All models show Autism sensitivity > 65%, but specificity varies",
+    "Data: 11,565 spectrograms from 16 subjects (11 Autism, 5 Normal)"
+  ],
+  "feature_extraction_subject_cv": {
+    "description": "Pretrained CNN-LSTM features (256-dim) + sklearn classifiers, proper subject-level CV",
+    "note": "Feature extractor (lstm_v2_best.pth) was trained with segment-level split; linear probe is honest",
+    "best_method": "SVM-RBF",
+    "results": {
+      "LR (C=1)": {
+        "cv_mean_auc": 65.16,
+        "cv_mean_f1": 65.97,
+        "cv_mean_acc": 77.13,
+        "cv_std_auc": 25.01
+      },
+      "LR (C=0.1)": {
+        "cv_mean_auc": 66.78,
+        "cv_mean_f1": 67.32,
+        "cv_mean_acc": 77.44,
+        "cv_std_auc": 25.87
+      },
+      "SVM-RBF": {
+        "cv_mean_auc": 68.1,
+        "cv_mean_f1": 68.69,
+        "cv_mean_acc": 81.91,
+        "cv_std_auc": 28.51
+      },
+      "SVM-Linear": {
+        "cv_mean_auc": 66.72,
+        "cv_mean_f1": 67.23,
+        "cv_mean_acc": 74.56,
+        "cv_std_auc": 27.54
+      }
+    },
+    "per_fold_auc": {
+      "SVM-RBF": {
+        "fold1_Amer_Bader_Deena": 81.5,
+        "fold2_Dhelal_Duaa_Mada": 85.9,
+        "fold3_Mahmud_Mohammed": 98.0,
+        "fold4_Majdolin_Nour_Omar": 57.8,
+        "fold5_Omran_Shahad_Yahia_Zyad": 17.4
+      }
+    },
+    "key_finding": "Fold 5 subjects (Omran, Shahad, Yahia, Zyad) show AUC 17-19% with ALL methods, suggesting atypical EEG patterns not generalizable from 12-subject training"
+  },
+  "plots_generated": {
+    "path": "results/plots/",
+    "figures": [
+      "fig1_fold_performance.png - Per-fold AUC/F1/Acc bar chart with leakage annotation",
+      "fig2_leakage_comparison.png - Segment-level vs subject-level comparison",
+      "fig3_fold_heatmap.png - Per-fold metric heatmap",
+      "fig4_model_comparison.png - All segment-level models comparison",
+      "fig5_dataset_overview.png - Class distribution and fold design",
+      "fig6_mc_dropout.png - MC-Dropout uncertainty estimation",
+      "fig7_results_table.png - Complete results table as figure",
+      "fig8_feature_extraction_cv.png - Feature extraction CV comparison"
+    ]
+  }
+}

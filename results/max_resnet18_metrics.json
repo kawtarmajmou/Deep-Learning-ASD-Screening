@@ -1,0 +1,17 @@
+{
+  "accuracy": 63.68,
+  "f1": 57.59,
+  "auc": 61.25,
+  "sensitivity": 72.76,
+  "specificity": 42.69,
+  "confusion_matrix": [
+    [
+      298,
+      400
+    ],
+    [
+      440,
+      1175
+    ]
+  ]
+}

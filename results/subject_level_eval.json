@@ -1,0 +1,103 @@
+{
+  "subject_level_results": {
+    "CNN-LSTM-V2": {
+      "model": "CNN-LSTM-V2 (lstm_v2_best)",
+      "fold_results": [
+        {
+          "fold": 1,
+          "test": [
+            "Amer",
+            "Bader",
+            "Deena"
+          ],
+          "acc": 91.91,
+          "f1": 91.3,
+          "auc": 97.22,
+          "sens": 93.82,
+          "spec": 88.64
+        },
+        {
+          "fold": 2,
+          "test": [
+            "Dhelal",
+            "Duaa",
+            "Mada"
+          ],
+          "acc": 81.67,
+          "f1": 81.53,
+          "auc": 86.14,
+          "sens": 69.85,
+          "spec": 94.64
+        },
+        {
+          "fold": 3,
+          "test": [
+            "Mahmud",
+            "Mohammed",
+            "MohammedAshi"
+          ],
+          "acc": 98.5,
+          "f1": 98.13,
+          "auc": 99.82,
+          "sens": 98.76,
+          "spec": 97.83
+        },
+        {
+          "fold": 4,
+          "test": [
+            "Majdolin",
+            "Nour",
+            "Omar"
+          ],
+          "acc": 78.43,
+          "f1": 48.85,
+          "auc": 57.23,
+          "sens": 98.32,
+          "spec": 5.56
+        },
+        {
+          "fold": 5,
+          "test": [
+            "Omran",
+            "Shahad",
+            "Yahia",
+            "Zyad"
+          ],
+          "acc": 74.3,
+          "f1": 42.63,
+          "auc": 19.86,
+          "sens": 100.0,
+          "spec": 0.0
+        }
+      ],
+      "cv_mean": {
+        "acc": 84.96,
+        "f1": 72.49,
+        "auc": 72.05,
+        "sens": 92.15,
+        "spec": 57.33
+      },
+      "cv_std": {
+        "acc": 8.93,
+        "f1": 22.55,
+        "auc": 30.16,
+        "sens": 11.34,
+        "spec": 44.68
+      },
+      "pooled": {
+        "accuracy": 83.84,
+        "f1": 78.89,
+        "auc": 69.37,
+        "sensitivity": 94.75,
+        "specificity": 58.64
+      }
+    }
+  },
+  "segment_level_reference": {
+    "accuracy": 77.82,
+    "f1": 77.45,
+    "auc": 81.85,
+    "sensitivity": 86.38,
+    "specificity": 57.92
+  }
+}

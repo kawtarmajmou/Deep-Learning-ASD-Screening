@@ -1,0 +1,338 @@
+{
+  "LR (C=1)": {
+    "cv_mean": {
+      "acc": 77.13,
+      "f1": 65.97,
+      "auc": 65.16,
+      "sens": 83.65,
+      "spec": 51.77
+    },
+    "cv_std": {
+      "acc": 4.63,
+      "f1": 14.38,
+      "auc": 25.01,
+      "sens": 12.17,
+      "spec": 35.07
+    },
+    "fold_results": [
+      {
+        "fold": 1,
+        "test": [
+          "Amer",
+          "Bader",
+          "Deena"
+        ],
+        "acc": 70.7,
+        "f1": 69.33,
+        "auc": 72.19,
+        "sens": 72.85,
+        "spec": 67.04
+      },
+      {
+        "fold": 2,
+        "test": [
+          "Dhelal",
+          "Duaa",
+          "Mada"
+        ],
+        "acc": 80.56,
+        "f1": 80.33,
+        "auc": 84.04,
+        "sens": 66.67,
+        "spec": 95.8
+      },
+      {
+        "fold": 3,
+        "test": [
+          "Mahmud",
+          "Mohammed",
+          "MohammedAshi"
+        ],
+        "acc": 83.83,
+        "f1": 80.06,
+        "auc": 88.52,
+        "sens": 87.88,
+        "spec": 73.19
+      },
+      {
+        "fold": 4,
+        "test": [
+          "Majdolin",
+          "Nour",
+          "Omar"
+        ],
+        "acc": 76.36,
+        "f1": 57.54,
+        "auc": 62.45,
+        "sens": 90.98,
+        "spec": 22.81
+      },
+      {
+        "fold": 5,
+        "test": [
+          "Omran",
+          "Shahad",
+          "Yahia",
+          "Zyad"
+        ],
+        "acc": 74.22,
+        "f1": 42.6,
+        "auc": 18.59,
+        "sens": 99.89,
+        "spec": 0.0
+      }
+    ]
+  },
+  "LR (C=0.1)": {
+    "cv_mean": {
+      "acc": 77.44,
+      "f1": 67.32,
+      "auc": 66.78,
+      "sens": 82.46,
+      "spec": 56.37
+    },
+    "cv_std": {
+      "acc": 5.15,
+      "f1": 15.15,
+      "auc": 25.87,
+      "sens": 11.7,
+      "spec": 35.34
+    },
+    "fold_results": [
+      {
+        "fold": 1,
+        "test": [
+          "Amer",
+          "Bader",
+          "Deena"
+        ],
+        "acc": 73.05,
+        "f1": 72.48,
+        "auc": 75.88,
+        "sens": 69.43,
+        "spec": 79.22
+      },
+      {
+        "fold": 2,
+        "test": [
+          "Dhelal",
+          "Duaa",
+          "Mada"
+        ],
+        "acc": 80.89,
+        "f1": 80.77,
+        "auc": 85.16,
+        "sens": 69.64,
+        "spec": 93.24
+      },
+      {
+        "fold": 3,
+        "test": [
+          "Mahmud",
+          "Mohammed",
+          "MohammedAshi"
+        ],
+        "acc": 85.93,
+        "f1": 82.84,
+        "auc": 91.78,
+        "sens": 88.57,
+        "spec": 78.99
+      },
+      {
+        "fold": 4,
+        "test": [
+          "Majdolin",
+          "Nour",
+          "Omar"
+        ],
+        "acc": 73.04,
+        "f1": 57.88,
+        "auc": 62.02,
+        "sens": 84.68,
+        "spec": 30.41
+      },
+      {
+        "fold": 5,
+        "test": [
+          "Omran",
+          "Shahad",
+          "Yahia",
+          "Zyad"
+        ],
+        "acc": 74.3,
+        "f1": 42.63,
+        "auc": 19.04,
+        "sens": 100.0,
+        "spec": 0.0
+      }
+    ]
+  },
+  "SVM-RBF": {
+    "cv_mean": {
+      "acc": 81.91,
+      "f1": 68.69,
+      "auc": 68.1,
+      "sens": 86.87,
+      "spec": 57.78
+    },
+    "cv_std": {
+      "acc": 7.27,
+      "f1": 21.0,
+      "auc": 28.51,
+      "sens": 13.58,
+      "spec": 46.74
+    },
+    "fold_results": [
+      {
+        "fold": 1,
+        "test": [
+          "Amer",
+          "Bader",
+          "Deena"
+        ],
+        "acc": 79.92,
+        "f1": 79.66,
+        "auc": 81.48,
+        "sens": 72.36,
+        "spec": 92.8
+      },
+      {
+        "fold": 2,
+        "test": [
+          "Dhelal",
+          "Duaa",
+          "Mada"
+        ],
+        "acc": 81.67,
+        "f1": 81.49,
+        "auc": 85.89,
+        "sens": 68.58,
+        "spec": 96.04
+      },
+      {
+        "fold": 3,
+        "test": [
+          "Mahmud",
+          "Mohammed",
+          "MohammedAshi"
+        ],
+        "acc": 95.61,
+        "f1": 94.72,
+        "auc": 97.98,
+        "sens": 94.35,
+        "spec": 98.91
+      },
+      {
+        "fold": 4,
+        "test": [
+          "Majdolin",
+          "Nour",
+          "Omar"
+        ],
+        "acc": 78.06,
+        "f1": 44.94,
+        "auc": 57.77,
+        "sens": 99.04,
+        "spec": 1.17
+      },
+      {
+        "fold": 5,
+        "test": [
+          "Omran",
+          "Shahad",
+          "Yahia",
+          "Zyad"
+        ],
+        "acc": 74.3,
+        "f1": 42.63,
+        "auc": 17.4,
+        "sens": 100.0,
+        "spec": 0.0
+      }
+    ]
+  },
+  "SVM-Lin": {
+    "cv_mean": {
+      "acc": 74.56,
+      "f1": 67.23,
+      "auc": 66.72,
+      "sens": 75.85,
+      "spec": 65.65
+    },
+    "cv_std": {
+      "acc": 14.86,
+      "f1": 19.68,
+      "auc": 27.54,
+      "sens": 20.17,
+      "spec": 34.83
+    },
+    "fold_results": [
+      {
+        "fold": 1,
+        "test": [
+          "Amer",
+          "Bader",
+          "Deena"
+        ],
+        "acc": 76.23,
+        "f1": 75.91,
+        "auc": 77.69,
+        "sens": 69.59,
+        "spec": 87.53
+      },
+      {
+        "fold": 2,
+        "test": [
+          "Dhelal",
+          "Duaa",
+          "Mada"
+        ],
+        "acc": 81.67,
+        "f1": 81.53,
+        "auc": 85.68,
+        "sens": 69.85,
+        "spec": 94.64
+      },
+      {
+        "fold": 3,
+        "test": [
+          "Mahmud",
+          "Mohammed",
+          "MohammedAshi"
+        ],
+        "acc": 92.81,
+        "f1": 90.94,
+        "auc": 95.31,
+        "sens": 95.45,
+        "spec": 85.87
+      },
+      {
+        "fold": 4,
+        "test": [
+          "Majdolin",
+          "Nour",
+          "Omar"
+        ],
+        "acc": 47.77,
+        "f1": 45.13,
+        "auc": 57.21,
+        "sens": 44.37,
+        "spec": 60.23
+      },
+      {
+        "fold": 5,
+        "test": [
+          "Omran",
+          "Shahad",
+          "Yahia",
+          "Zyad"
+        ],
+        "acc": 74.3,
+        "f1": 42.63,
+        "auc": 17.69,
+        "sens": 100.0,
+        "spec": 0.0
+      }
+    ]
+  }
+}

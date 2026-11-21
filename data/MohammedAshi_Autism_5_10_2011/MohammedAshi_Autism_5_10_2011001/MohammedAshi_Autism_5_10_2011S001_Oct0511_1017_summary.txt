@@ -1,0 +1,26 @@
+MohammedAshi_Autism_5_10_2011S001_Oct0511_1017_summary.txt
+Wed Oct 05 10:25:32 2011
+
+System ID = 	Amp ID = 	Montage ID = 
+
+SW Versions:
+Operator:
+	2245, 2009/02/03 15:58:46
+Signal Processing:
+	2245, 2009/02/03 15:58:46
+Application:
+	2245, 2009/02/03 15:58:46
+
+---------------------------------------------------
+Classifier Matrix:
+1 4 1 1 
+1 6 2 1 
+*** START OF RUN 1 IN ONLINE MODE ***
+Date = Oct/05/11		Time = 10:25
+Num of Sequences = 40
+MATRIX SIZE(s)
+6 x 6
+*** RUN SUMMARY ***
+System Pause Duration (in seconds): 0
+Number of Selections = 0
+

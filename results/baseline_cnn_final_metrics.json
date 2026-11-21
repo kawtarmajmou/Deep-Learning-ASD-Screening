@@ -1,0 +1,10 @@
+{
+  "step": 1,
+  "model": "Baseline_CNN",
+  "accuracy": 57.89,
+  "f1": 59.81,
+  "auc": 64.42,
+  "sensitivity": 52.87,
+  "specificity": 70.42,
+  "threshold": 0.846
+}

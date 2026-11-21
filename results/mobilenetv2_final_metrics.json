@@ -1,0 +1,10 @@
+{
+  "step": 2,
+  "model": "MobileNetV2",
+  "accuracy": 61.46,
+  "f1": 63.19,
+  "auc": 65.18,
+  "sensitivity": 62.71,
+  "specificity": 58.35,
+  "threshold": 0.702
+}

@@ -1,0 +1,8 @@
+{
+  "step": 2,
+  "model": "MobileNetV2",
+  "epochs": 7,
+  "best_val_acc": 70.29988465974625,
+  "test_acc": 69.47004608294931,
+  "test_f1": 81.98504418762747
+}
